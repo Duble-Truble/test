@@ -1,0 +1,129 @@
+.account-type-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    height: max-content;
+  }
+  
+  .account-type-container {
+    width: 40%;
+    background: white;
+    padding: 2rem;
+    margin-top: 10rem;
+   /* border-radius: 10px;*/
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  }
+  
+  .background-image-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%; /* Adjust width as needed */
+    background: url('../../public/resourcess/AccountType_bg_left.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    display: grid;
+    place-items: center;
+  }
+
+  .background-image-container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 101, 216, 0.9); /* Blue color overlay with opacity */
+    z-index: -1;
+  }
+
+  .text-content{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 2.2rem;
+    width: 35rem;
+    height: 20rem;
+    font-size: 1.4rem;
+  }
+
+  .duble-quotes{
+    width: 28px;
+    height: 2rem;
+    font-family:"Gayathri";
+    color: #00DAF7;
+    font-size: 3rem;
+  }
+
+
+  .end-of-text-identifier{
+    width: 2rem;
+    height: 2rem;
+    background: url('../../public/resourcess/Untitled.png') no-repeat center center;
+    margin-left: 28rem;
+  }
+
+  .account-type-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  p{
+    color:  #8692A6;
+  }
+
+  .account-type-option {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e5e7eb; /* gray-300 */
+   
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    
+  }
+  
+  .account-type-option:hover {
+    background-color: #f3f4f6; /* gray-100 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .account-type-icon.poligon1{
+    background: url('../../public/resourcess/Polygon1.png') no-repeat center center;
+    
+  }
+
+  .account-type-icon.poligon2{
+    background: url('../../public/resourcess/Polygon2.png') no-repeat center center;
+  }
+
+  .inner-icon2{
+    background: url('../../public/resourcess/briefcase.png') no-repeat center center;
+  }
+  .account-type-icon {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background-color: #eff6ff; /* blue-100 */
+    color: #3b82f6; /* blue-600 */
+    font-size: 1.25rem; /* text-xl */
+  }
+  
+  .account-type-text {
+    font-size: 1rem; /* text-base */
+    color: #111827; /* gray-900 */
+  }
+  
+  .sign-in-link {
+    color: #3b82f6; /* blue-600 */
+    font-size: 0.875rem; /* text-sm */
+    text-decoration: none;
+    margin-left: auto;
+  }
+  
+  /* Add other styles as needed */

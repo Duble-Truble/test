@@ -1,16 +1,18 @@
+// src/index.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App.tsx';
+import './index.css';
 
 // Ensure you have a div with id='root' in your public/index.html file
 const rootElement = document.getElementById('root');
 if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
-    <React.StrictMode>
+    <Router>
       <App />
-    </React.StrictMode>
+    </Router>
   );
 } else {
   console.error('Failed to find the root element');

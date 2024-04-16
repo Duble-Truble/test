@@ -1,21 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
+// src/App.tsx
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import AccountType from './components/AccountType.tsx';
 
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch('/api')
-      .then(response => response.json())
-      .then(data => setData(data.message));
-  }, []);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>{data ? data : "Loading..."}</p>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<AccountType />} />
+      {/* Define other routes here */}
+    </Routes>
   );
 }
 
